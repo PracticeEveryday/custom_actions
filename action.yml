@@ -1,9 +1,13 @@
-name: "Thank you"
-description: "Replying to participants"
+name: 'CI/CD Study'
+description: 'Say Hello'
+author: 'KDH'
+
 runs:
-  using: "node16"
-  main: "index.js"
+  using: 'node20'
+  main: 'dist/index.js'
+
 inputs:
-  token:
-    description: "github token"
-    required: true    # Action은 Token이라는 값을 필수로 가져야 한다.
+  name:
+    description: 'The name of the person to greet'
+    required: true
+    default: 'KDH'
