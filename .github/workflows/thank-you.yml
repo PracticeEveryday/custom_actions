@@ -1,0 +1,13 @@
+name: Thank you
+
+on:
+  #  workflow_dispatch:
+  pull_request:
+    types: [opened]
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Thank you
+        uses: PracticeEveryday/custom_actions.git

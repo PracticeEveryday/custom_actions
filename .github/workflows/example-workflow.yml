@@ -3,6 +3,9 @@ name: Example Workflow
 on:
   workflow_dispatch:
     inputs:
+#      pull_request:
+#        types: [ opened ]
+
       who-to-greet:
         description: Who to greet in the log
         required: true
