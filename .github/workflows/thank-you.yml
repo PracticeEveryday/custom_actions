@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Thank you
-        uses: PracticeEveryday/custom_actions.git
+        uses: PracticeEveryday/custom_actions@main
