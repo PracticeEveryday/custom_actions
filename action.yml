@@ -1,5 +1,20 @@
-name: "Thank you"
-description: "Replying to participants"
+name: 'CI/CD Study'
+description: 'Say Hello'
+author: 'KDH'
+
 runs:
-  using: "node16"
-  main: "index.js"
+  using: 'node20'
+  main: 'dist/index.js'
+
+inputs:
+  name:
+    description: 'The name of the person to greet'
+    required: true
+    default: 'KDH'
+  GITHUB_TOKEN:
+    description: 'The GitHub token for authentication.'
+    required: true
+  label:
+    description: 'The label to be applied to the pull request.'
+    required: true
+

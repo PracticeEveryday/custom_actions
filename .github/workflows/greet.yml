@@ -1,0 +1,20 @@
+name: Say Hello
+
+on:
+  # workflow_dispatch: # 수동으로 트리거 될 때 워크 플로를 실행한다.
+  pull_request:
+    types: [ opened, reopened ]
+
+jobs:
+  run-my-action:
+    name: Checks if this action works
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./ # ./ <- 최상위 action.yml을 실행한다.
+        with:
+          name: 'Kim Dong Hyeon'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          label: 'needs-review'
+
+
