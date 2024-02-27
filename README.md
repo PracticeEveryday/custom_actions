@@ -1,3 +1,3 @@
 # custom_actions
 
-actions test
+custom action test
