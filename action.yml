@@ -1,7 +1,7 @@
 name: "Thank you"
 description: "Replying to participants"
 runs:
-  using: "node16"
+  using: "node20"
   main: "index.js"
 inputs:
   token:
